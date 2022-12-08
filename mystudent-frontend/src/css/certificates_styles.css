@@ -1,0 +1,77 @@
+/*
+   Created by: Ngoc Khanh Trinh
+   Created on: 13/06/2022
+*/
+@charset "utf-8";
+
+ 
+ /* Style the search field */
+
+ form.topsearch input[type=text] {
+   padding: 10px;
+   font-size: 17px;
+   border: 0.5px solid rgb(186, 186, 186);
+   float: left;
+   width: 39%;
+   background: #f1f1f1;
+   margin-left: 1%;
+   margin-top: 1%;
+   margin-right: 1%;
+ }
+
+ div#certImg img {
+  width: 80%;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 10px solid rgb(186, 186, 186);
+}
+
+div#certImg h1 {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: 1.5em;
+}
+
+div#quote {
+  width: 75%;
+  font-size: 1.2em;
+  margin: 0 auto 5% auto;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 10px solid rgb(212, 212, 212);
+}
+
+div#quote h1 {
+  margin: 2% auto 2% auto;
+  line-height: 1.3em;
+}
+ 
+ /* Style the submit button */
+ form.topsearch button {
+   float: left;
+   width: 16%;
+   padding: 10px;
+   background: #047589;
+   color: white;
+   font-size: 17px;
+   border: 1px solid #047589;
+   border-left: none; /* Prevent double borders */
+   cursor: pointer;
+   margin: 1%;
+ }
+ 
+ form.topsearch button:hover {
+   background: #0f7486;
+ }
+
+
+
+ 
+ /* Clear floats */
+ form.topsearch::after {
+   content: "";
+   clear: both;
+   display: table;
+ }

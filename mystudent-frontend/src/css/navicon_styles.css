@@ -1,0 +1,39 @@
+/*
+   Created by: Ngoc Khanh Trinh
+   Created on: 13/06/2022
+*/
+@charset "utf-8";
+
+
+/* ===============================
+   Mobile Devices: 0 to 480px 
+   ===============================
+*/
+
+@media only screen and (max-width: 480px) {
+    a#navicon {
+        display: block;
+        text-align: left;
+     }
+  
+     nav.tabs ul {
+        display: none;
+     }
+  
+     a#navicon:hover+ul, nav.tabs ul:hover {
+  
+        display: block;
+     }
+   
+}
+
+/* =========================
+   Tablet and Desktop Styles: 481px and greater 
+   =========================
+*/
+
+@media only screen and (min-width: 481px) {
+   a#navicon {
+      display: none;
+   }
+}

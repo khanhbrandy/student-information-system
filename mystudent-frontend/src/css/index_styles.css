@@ -1,0 +1,124 @@
+/*
+   Created by: Ngoc Khanh Trinh
+   Created on: 13/06/2022
+*/
+@charset "utf-8";
+
+/* Article Styles */
+
+article#overview {
+   padding: 10px;
+   margin-top: 1%;
+   margin-bottom: 0;
+   text-align: left;
+}
+
+article#overview h1 {
+   color: black;
+   font-size: 1.2em;
+   line-height: 1.1em;
+   margin: 15px 0px 10px 0px;
+   padding-left: 10px;
+}
+
+article#overview p {
+   margin: 15px 10px 10px 30px;
+}
+
+article#overview a {
+   text-decoration: none;
+}
+
+section#modules {
+   margin-bottom: 30px;
+}
+
+section#modules article {
+   border: 1px solid rgba(230, 235, 237, 0.25);
+   border-radius: 20px;
+   margin: 10px 20px 10px 20px;
+}
+
+section#modules article:nth-of-type(even) {
+   background-color: rgb(37, 150, 190);
+}
+
+section#modules article:nth-of-type(odd) {
+   background-color: rgb(171,219,227);
+}
+
+section#modules article h1 {
+   font-size: 1.2em;
+   margin: 5px;
+   text-align: center;
+}
+
+section#modules article p {
+   margin: 8px;
+}
+
+/* =========================
+   Mobile Styles: 0 to 768px 
+   =========================
+*/
+/* Horizonal Navigation Styles */
+@media only screen and (max-width: 768px) {
+
+   article#overview img {
+      background: radial-gradient(white 30%, rgb(151,151,151));
+      float: left;
+      width: 95%;
+      margin: 0% 2% 8% 2%;
+      border-radius: 3px 3px;
+      box-shadow: 5px 5px 10px rgb(151,151,151);
+   }
+
+   article#overview > ul > li {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 20px;
+      margin-right: 10px;
+      list-style-type: circle;
+   }
+   article#overview > ul > li {
+      margin-left: 10%;
+   }
+}
+
+
+/* ============================================
+  Tablet and Desktop Styles: 769px and greater 
+  ============================================
+*/
+
+/* Horizonal Navigation Styles */
+@media only screen and (min-width: 769px) {
+   article#overview img {
+      background: radial-gradient(white 30%, rgb(151,151,151));
+      float: left;
+      width: 20%;
+      margin: 0% 6% 2% 3%;
+      border-radius: 3px 3px;
+      box-shadow: 5px 5px 10px rgb(151,151,151);
+   }
+
+   article#overview > ul > li.jobs {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 30%;
+      margin-right: 10px;
+      list-style-type: circle;
+   }
+
+   article#overview > ul > li.equivalent {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 5%;
+      margin-right: 10px;
+      list-style-type: circle;
+   }
+   section#modules {
+      margin-left: 20px;
+      margin-right: 20px;
+   }
+}

@@ -1,0 +1,96 @@
+/*
+   Created by: Ngoc Khanh Trinh
+   Created on: 13/06/2022
+*/
+@charset "utf-8";
+
+/* Basic styles to be used with all devices and under all conditions */
+
+/* Set a style for all buttons */
+
+/* Add form styles */
+.studentInforBoard {
+   background-color: #ffffff;
+   padding: 20px;
+   border: 1px solid #e2e2e2;
+   border-radius: 5px 5px;
+   box-shadow: 10px 10px 20px rgb(201, 201, 201);
+}
+.studentInforBoard h2 {
+   font-size: 1.3em;
+   margin: 3% auto 20px auto;
+   text-align: center;
+}
+
+.studentInforBoard table {
+   border-collapse: collapse;
+   width: 100%;
+}
+
+.studentInforBoard th,
+.studentInforBoard td {
+   padding: 8px;
+   text-align: left;
+   border-bottom: 1px solid #ddd;
+}
+
+.studentInforBoard tr:hover {
+   background-color: rgb(155, 225, 255);
+}
+
+
+
+button.backAdmin {
+   background-color: #006381;
+   color: white;
+   padding: 10px 20px;
+   margin: 20px 0;
+   border: none;
+   cursor: pointer;
+   width: 25%;
+}
+
+/* Button in the detail table */
+button.updateDetail {
+   background-color: #61a200;
+   color: white;
+   border: none;
+   cursor: pointer;
+   width: 50%;
+   height: 25px;
+   margin: 0 0 0 20%;
+
+}
+
+/* =========================
+   Mobile Styles: 0 to 481px 
+   =========================
+*/
+
+@media only screen and (max-width: 480px) {
+
+   div.studentInforBoard {
+      margin: 2.5% auto auto 2.5%;
+      float: left;
+      width: 85%;
+   }
+
+}
+
+
+
+/* ============================================
+   Desktop Styles: 769px and greater 
+   ============================================
+ */
+
+@media only screen and (min-width: 769px) {
+
+   div.studentInforBoard {
+      margin: 1% auto 1% auto;
+      flex: 1;
+      padding-bottom: 20px;
+      width: 94%;
+   }
+
+}
